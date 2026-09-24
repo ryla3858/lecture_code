@@ -1,6 +1,10 @@
 import unittest
 import random
 import os
+import sys
+
+sys.path.append("orig/unit_testing/")
+
 import math_lib
 import math
 
