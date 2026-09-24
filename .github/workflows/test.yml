@@ -18,4 +18,5 @@ jobs:
         with:
           environment-file: environment.yml
           init-shell: bash
-      - run: pycodestyle orig/unit_testing/test_math_lib.py 
+      - run: pycodestyle orig/unit_testing/test_math_lib.py
+        shell: bash -l {0}
