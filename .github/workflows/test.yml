@@ -1,0 +1,11 @@
+name: Unit tests
+
+on:
+  push:
+
+jobs:
+  run_unit_tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - run: python -m unittest orig/unit_testing/test_math_lib.py
